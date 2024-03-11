@@ -5,7 +5,7 @@ if (existsSync('config.env')) require('dotenv').config({ path: './config.env' })
 process.env.NODE_OPTIONS = '--max_old_space_size=2560'//2.5
 const DB_URL =  process.env.DATABASE_URL || '';
 module.exports = {
-    SESSION_ID: process.env.SESSION_ID || '', //your ssid to run bot
+    SESSION_ID: process.env.SESSION_ID || 'inrl~02a7cnld3dc30e4ccb4840045720ae949c38', //your ssid to run bot
     HEROKU: {
         API_KEY: process.env.HEROKU_API_KEY,
         APP_NAME: process.env.HEROKU_APP_NAME
@@ -20,7 +20,7 @@ module.exports = {
     PM_BLOCK : toBool(process.env.PM_BLOCK || "false"),
     BGMBOT : toBool(process.env.BGMBOT || "false"),
     CALL_BLOCK : toBool(process.env.CALL_BLOCK || "false"),
-    STATUS_VIEW : process.env.STATUS_VIEW || "false",
+    STATUS_VIEW : process.env.STATUS_VIEW || "true",
     SAVE_STATUS : toBool(process.env.SAVE_STATUS || "false"),
     ADMIN_SUDO_ACCESS: toBool(process.env.ADMIN_SUDO_ACCESS || "false"),
     DISABLE_PM: toBool(process.env.DISABLE_PM || "false"),
@@ -40,7 +40,7 @@ module.exports = {
     AUDIO_DATA : process.env.AUDIO_DATA || "INRL-BOT-MD;INRL;https://i.imgur.com/DyLAuEh.jpg",
     STICKER_DATA : process.env.STICKER_DATA || "inrl;inrl",
     BRAINSHOP: process.env.BRAINSHOP || '172372,nbjE0YAlyw3cpoMl',
-    SUDO : process.env.SUDO || "null",
+    SUDO : process.env.SUDO || "254705677688",
     RMBG_KEY: process.env.RMBG_KEY,
     OPEN_AI: process.env.OPEN_AI,
     ELEVENLABS: process.env.ELEVENLABS,
